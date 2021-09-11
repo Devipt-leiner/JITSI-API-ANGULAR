@@ -1,0 +1,18 @@
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+}
+
+.jitsi-container{
+    background-color: aqua;
+    min-width: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#jitsi-iframe {
+    width: 100%;
+}
