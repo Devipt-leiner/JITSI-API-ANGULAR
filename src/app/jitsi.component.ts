@@ -31,7 +31,7 @@ export class JitsiComponent implements OnInit, AfterViewInit {
           name: 'Juan Camilo ',
           displayName: 'leiner' // Set your username
       }
-      this.room = 'Ekt-12ashjdgajsdhgajsdgasjdyagsjdagsdjasvdaksxdaksydaksydgavsmjdhxgashdagkshjdgvagskdhvagskdg';
+      this.room = 'Ekt-12ashjdgajsdhgajsdgasjdyagsjdagsdjasvdaksxdak';
   }
 
   ngAfterViewInit(): void {
@@ -51,8 +51,12 @@ export class JitsiComponent implements OnInit, AfterViewInit {
             //    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
             //    'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
                 ],
+                hideConferenceTimer: true,
+                hideRecordingLabel: true,
+                hideConferenceSubject: true,
             },
             interfaceConfigOverwrite: {
+                HIDE_INVITE_MORE_HEADER: true,
                 SHOW_BRAND_WATERMARK: false,
                 SHOW_JITSI_WATERMARK: false,
                 SHOW_WATERMARK_FOR_GUESTS: false,
